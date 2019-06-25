@@ -1,0 +1,46 @@
+.ball{
+    position: absolute;
+    /* top: 0; */
+    background-color: #48d621;
+    border-radius: 50%;
+    height: 50px;
+    display: inline-block;
+    width: 50px;
+    box-shadow: 3px 3px 8px grey;
+}
+
+.surroundings{
+    text-align: center;
+}
+
+.surface{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #e68e66;
+}
+
+
+.ball-control{
+    position: absolute;
+    right: 35px;
+    text-align: right;
+}
+
+.ball-control .input-group {
+    margin-top: 15px;
+}
+
+.ball-control .input-group label{
+    margin-right: 15px;
+}
+
+.ball-control .input-group input{
+    text-align: center;
+    width: 60px;
+}
+
+.ball-control .input-group button{
+    cursor: pointer;
+}   

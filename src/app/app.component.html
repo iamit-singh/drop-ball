@@ -1,0 +1,133 @@
+<div class="surroundings">
+
+  <div class="ball-control">
+    <div class="input-group">
+      <label>Height (Meter)</label>
+      <input type="number" (change)="setPixelHeight()" name="height" [(ngModel)]="heightInMeter" />
+    </div>
+    <div class="input-group">
+          <label>1 Meter in pixels</label>
+          <input type="number" (change)="setMeterHeight()" name="meterToPix"  [(ngModel)]="meterToPix" />
+      </div>
+    <div class="input-group">
+      <button (click)="dropTheBall()">Drop the Ball</button>
+    </div>
+
+  </div>
+
+
+  <div #ball [@dropball]="{
+    value:dropBall,
+    params:{
+      dropTime:dropTime+'s',
+      dropPos: ballTop+height,
+      topVal_1:topVal_1,
+      topVal_2:topVal_2,
+      topVal_3:topVal_3,
+      topVal_4:topVal_4,
+      topVal_5:topVal_5,
+      topVal_6:topVal_6,
+      topVal_7:topVal_7,
+      topVal_8:topVal_8,
+      topVal_9:topVal_9,
+      topVal_10:topVal_10,
+      topVal_11:topVal_11,
+      topVal_12:topVal_12,
+      topVal_13:topVal_13,
+      topVal_14:topVal_14,
+      topVal_15:topVal_15,
+      topVal_16:topVal_16,
+      topVal_17:topVal_17,
+      topVal_18:topVal_18,
+      topVal_19:topVal_19,
+      topVal_20:topVal_20,
+      topVal_21:topVal_21,
+      topVal_22:topVal_22,
+      topVal_23:topVal_23,
+      topVal_24:topVal_24,
+      topVal_25:topVal_25,
+      topVal_26:topVal_26,
+      topVal_27:topVal_27,
+      topVal_28:topVal_28,
+      topVal_29:topVal_29,
+      topVal_30:topVal_30,
+      topVal_31:topVal_31,
+      topVal_32:topVal_32,
+      topVal_33:topVal_33,
+      topVal_34:topVal_34,
+      topVal_35:topVal_35,
+      topVal_36:topVal_36,
+      topVal_37:topVal_37,
+      topVal_38:topVal_38,
+      topVal_39:topVal_39,
+      topVal_40:topVal_40,
+      topVal_41:topVal_41,
+      topVal_42:topVal_42,
+      topVal_43:topVal_43,
+      topVal_44:topVal_44,
+      topVal_45:topVal_45,
+      topVal_46:topVal_46,
+      topVal_47:topVal_47,
+      topVal_48:topVal_48,
+      topVal_49:topVal_49,
+      topVal_50:topVal_50,
+      topVal_51:topVal_51,
+      topVal_52:topVal_52,
+      topVal_53:topVal_53,
+      topVal_54:topVal_54,
+      topVal_55:topVal_55,
+      topVal_56:topVal_56,
+      topVal_57:topVal_57,
+      topVal_58:topVal_58,
+      topVal_59:topVal_59,
+      topVal_60:topVal_60,
+      topVal_61:topVal_61,
+      topVal_62:topVal_62,
+      topVal_63:topVal_63,
+      topVal_64:topVal_64,
+      topVal_65:topVal_65,
+      topVal_66:topVal_66,
+      topVal_67:topVal_67,
+      topVal_68:topVal_68,
+      topVal_69:topVal_69,
+      topVal_70:topVal_70,
+      topVal_71:topVal_71,
+      topVal_72:topVal_72,
+      topVal_73:topVal_73,
+      topVal_74:topVal_74,
+      topVal_75:topVal_75,
+      topVal_76:topVal_76,
+      topVal_77:topVal_77,
+      topVal_78:topVal_78,
+      topVal_79:topVal_79,
+      topVal_80:topVal_80,
+      topVal_81:topVal_81,
+      topVal_82:topVal_82,
+      topVal_83:topVal_83,
+      topVal_84:topVal_84,
+      topVal_85:topVal_85,
+      topVal_86:topVal_86,
+      topVal_87:topVal_87,
+      topVal_88:topVal_88,
+      topVal_89:topVal_89,
+      topVal_90:topVal_90,
+      topVal_91:topVal_91,
+      topVal_92:topVal_92,
+      topVal_93:topVal_93,
+      topVal_94:topVal_94,
+      topVal_95:topVal_95,
+      topVal_96:topVal_96,
+      topVal_97:topVal_97,
+      topVal_98:topVal_98,
+      topVal_99:topVal_99,
+      topVal_100:topVal_100
+    }
+  }" 
+  (@dropball.done)="droppedToSurface($event)"
+  [ngStyle]="{'top': ballPosition()}" class="ball">
+  </div>
+
+  <div #surface class="surface">
+  </div>
+
+</div>
